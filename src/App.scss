@@ -1,3 +1,6 @@
+* {
+  font-family: 'Nerko One', cursive;
+}
 body {
   margin: 0;
 }
@@ -42,9 +45,22 @@ body {
           label {
             display: block;
             margin-bottom: 5px;
+            margin-top: 10px;
           }
           input {
             padding: 5px 10px;
+            border-radius: 5px;
+          }
+          button {
+            background: #5757c7;
+            color: #fff;
+            border: none;
+            padding: 6px;
+            margin-left: 5px;
+            border-radius: 5px;
+            &:hover {
+              cursor: pointer;
+            }
           }
           .theme {
             text-align: center;
@@ -148,6 +164,11 @@ body {
       }
       .editor-container.closed {
         flex-grow: 0;
+      }
+    }
+    .output {
+      iframe {
+        min-height: 50vh;
       }
     }
   }
